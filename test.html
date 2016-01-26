@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul id="list">
+		<li>
+			<h2>我的好友</h2>
+			<ul>
+				<li>张三</li>
+				<li>李四</li>
+				<li>王五</li>
+			</ul>
+		</li>
+		<li>
+			<h2>我的亲人</h2>
+			<ul>
+				<li>小西</li>
+				<li>贝贝</li>
+				<li>囡囡</li>
+			</ul>
+		</li>
+		<li>
+			<h2>陌生人</h2>
+			<ul>
+				<li>娃娃</li>
+				<li>姐姐</li>
+				<li>大大</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+<script type="text/javascript">
+	var oUl=document.getElementById('list');
+	var aUl=oUl.getElementsByTagName('ul');
+
+	for (var i = 0; i < aUl.length; i++) {
+		aLi = aUl[i].getElementsByTagName('li');
+		for (var j = 0; j < aLi.length; j++) {
+			aLi[j].style.border = '1px solid red';
+		};
+	};
+</script>
+</html>
